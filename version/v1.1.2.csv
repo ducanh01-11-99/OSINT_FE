@@ -1,0 +1,111 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Due Date,Description,Environment,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Attachment,Attachment,Custom field (Dev),Custom field (Epic Colour),Custom field (Epic Link),Custom field (Epic Name),Custom field (Epic Status),Custom field (Original story points),Custom field (Parent Link),Custom field (Rank),Sprint,Custom field (Story Points),Custom field (Target end),Custom field (Target start),Custom field (Team),Comment,Comment
+[SSOR] - Sửa các lỗi phát sinh trên osint,SSOR-399,14541,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,15/Jan/24 5:43 PM,18/Jan/24 10:39 AM,18/Jan/24 10:48 AM,,,"# Sửa giao diện màn tạo cảnh báo
+ # Sửa lại nội dung tooltip trên các các biểu đồ so sánh
+ # Sửa lại tiêu đề electronic -> báo chí (biểu đồ diễn biến thảo luận)",,";15/Jan/24 5:44 PM;anh.dam@ncsgroup.vn;7200",14400,7200,7200,50%,14400,7200,7200,,,,,,,,,,"0|i00h58:",[SYSTEM] Sprint - [3 - 4],,,,,"15/Jan/24 5:43 PM;anh.dam@ncsgroup.vn;Em đã xử lý:
+
+- Sửa giao diện màn tạo cảnh báo
+https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/20bddfe9bfa6f4ec74133573f6531ef519f82f42
+- Sửa lại nội dung tooltip trên các các biểu đồ so sánh
+https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/dd2e29186fc1c0128202c7da8a03f7e04a8dedde
+- Sửa lại tiêu đề electronic -> báo chí (biểu đồ diễn biến thảo luận)
+https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/6cab6785aec80d1f89b0f3cfa14ed401d8f3d9e7
+
+ ;;;",
+[SSOR] - Sửa lại vị trí nút xuất file pdf theo thiết kế mới,SSOR-400,14548,Task,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,16/Jan/24 9:41 AM,18/Jan/24 10:39 AM,18/Jan/24 10:39 AM,,,"Sửa lại vị trí nút xuất file pdf từ bên trong trang về menu sidebar
+
+!image-2024-01-16-09-41-26-200.png!",,,3600,3600,,0%,3600,3600,,"17/Jan/24 6:15 PM;anh.dam@ncsgroup.vn;dev_test_ok.png;https://rd.cytech.ai/secure/attachment/12648/dev_test_ok.png",,,,,,,,,"0|i00h6s:",[SYSTEM] Sprint - [3 - 4],,,,,"16/Jan/24 12:34 PM;anh.dam@ncsgroup.vn;Em đã xử lý: [https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/1c3e50a38af1774b46f43967d3335d7f3b89613c]
+
+Update lại vị trí: [https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/9ad708b5784f80bc940f3e2f318f226f4247e2ba]
+
+ ;;;",
+[SSOR] - Lỗi không load lại được danh sách bản đồ từ khóa sau khi thay đổi trạng thái,SSOR-401,14551,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,16/Jan/24 10:31 AM,18/Jan/24 10:39 AM,18/Jan/24 10:39 AM,,,"Bấm thay đổi trạng thái từ khóa, khi loading lại bị lỗi không loading được.
+
+!image-2024-01-16-10-31-51-770.png!",,,3600,3600,,0%,3600,3600,,"16/Jan/24 4:25 PM;anh.dam@ncsgroup.vn;dev_test_ok_401.mp4;https://rd.cytech.ai/secure/attachment/12628/dev_test_ok_401.mp4","16/Jan/24 10:31 AM;anh.dam@ncsgroup.vn;image-2024-01-16-10-31-51-770.png;https://rd.cytech.ai/secure/attachment/12613/image-2024-01-16-10-31-51-770.png",,,,,,,,"0|i00h7g:",[SYSTEM] Sprint - [3 - 4],,,,,"16/Jan/24 10:52 AM;anh.dam@ncsgroup.vn;Em đã xử lý: [https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/fff021a3d809dcd54b618da7df99bc69dd935436]
+
+BE vẫn lỗi, nên bổ sung video sau;;;",
+[SSOR] - Lỗi không focus vào tab nào khi load lại trang,SSOR-402,14554,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,16/Jan/24 3:22 PM,18/Jan/24 10:39 AM,18/Jan/24 10:39 AM,,,"!image-2024-01-16-15-21-48-966.png!
+
+Vào tab quản trị thanh header, reload lại trang thì mất focus như hình.
+
+ ",,,3600,3600,,0%,3600,3600,,"16/Jan/24 3:21 PM;anh.dam@ncsgroup.vn;image-2024-01-16-15-21-48-966.png;https://rd.cytech.ai/secure/attachment/12622/image-2024-01-16-15-21-48-966.png","16/Jan/24 4:24 PM;anh.dam@ncsgroup.vn;test_dev_ok_402.mp4;https://rd.cytech.ai/secure/attachment/12627/test_dev_ok_402.mp4",,,,,,,,"0|i00h84:",[SYSTEM] Sprint - [3 - 4],,,,,"16/Jan/24 4:22 PM;anh.dam@ncsgroup.vn;Em đã xử lý: https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/922aef0bb2ab2cd3a8557160c799e069a7fdc691;;;",
+[SSOR] - Thêm tính năng hightlight từ khóa bài viết trong chi tiết bài viết,SSOR-403,14557,Task,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,16/Jan/24 3:55 PM,18/Jan/24 10:39 AM,18/Jan/24 10:39 AM,,,"Đối với các bài viết đã lọc (theo chủ để con - chủ đề có danh sách từ khóa), hiển thị hightlight đôi với các từ trùng với từ khóa của chủ đề tương ứng",,,14400,14400,,0%,14400,14400,,"17/Jan/24 6:13 PM;anh.dam@ncsgroup.vn;dev_test_ok_403.mp4;https://rd.cytech.ai/secure/attachment/12647/dev_test_ok_403.mp4",,,,,,,,,"0|i00h8s:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:09 PM;anh.dam@ncsgroup.vn;Em đã xử  lý: [https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/c11cdbf18adf635db009af9965815a85a7da58b7]
+
+Update khi có lỗi với hàm thay thế:
+
+https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/228c7a6e0cc5f92f4c1073f2759d74a44e0a303c;;;",
+[SSOR] - Thêm giao diện khi xảy ra trường hợp bài viết lấy dữ liệu bị lỗi,SSOR-404,14558,Story,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,16/Jan/24 4:34 PM,18/Jan/24 10:40 AM,18/Jan/24 10:40 AM,,,"với các modal hiển thị chi tiết tin bài, có trường hợp không tải được thông tin, thì xử lý sinh giao diện như hình)
+
+!image-2024-01-16-16-34-35-368.png!",,,7200,7200,,0%,7200,7200,,"16/Jan/24 4:34 PM;anh.dam@ncsgroup.vn;image-2024-01-16-16-34-35-368.png;https://rd.cytech.ai/secure/attachment/12629/image-2024-01-16-16-34-35-368.png","17/Jan/24 6:07 PM;anh.dam@ncsgroup.vn;test_dev_ok_404.mp4;https://rd.cytech.ai/secure/attachment/12646/test_dev_ok_404.mp4",,,,,,,,"0|i00h90:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:02 PM;anh.dam@ncsgroup.vn;Em đã xử lý: https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/7f22cf2cd5505e5f4cdb343c8e7f7e7623c175b2;;;",
+[SSOR] - Bỏ phân trang với các bảng có số lượng bài viết < 10,SSOR-406,14574,Task,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,17/Jan/24 6:28 PM,18/Jan/24 10:40 AM,18/Jan/24 10:40 AM,,,,,,3600,3600,,0%,3600,3600,,"17/Jan/24 6:30 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-30-00-886.png;https://rd.cytech.ai/secure/attachment/12651/image-2024-01-17-18-30-00-886.png","17/Jan/24 6:31 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-31-01-808.png;https://rd.cytech.ai/secure/attachment/12652/image-2024-01-17-18-31-01-808.png",,,,,,,,"0|i00hck:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:30 PM;anh.dam@ncsgroup.vn;Xử lý trong các màn danh sách cảnh báo
+
+!image-2024-01-17-18-30-00-886.png!;;;","17/Jan/24 6:31 PM;anh.dam@ncsgroup.vn;Em đã xử lý:
+
+[https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/fffedf7b70dd54c8c7ac831389eb81e94aab919e]
+
+!image-2024-01-17-18-31-01-808.png!;;;"
+"[SSOR] - Lỗi bấm vào chi tiết đối tượng không call api, lỗi khi scroll danh sách bài viết",SSOR-407,14575,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,17/Jan/24 6:35 PM,18/Jan/24 10:40 AM,18/Jan/24 10:40 AM,,,Lỗi: !image-2024-01-17-18-35-04-562.png!,,,3600,3600,,0%,3600,3600,,"17/Jan/24 6:35 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-35-04-562.png;https://rd.cytech.ai/secure/attachment/12653/image-2024-01-17-18-35-04-562.png",,,,,,,,,"0|i00hcs:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:36 PM;anh.dam@ncsgroup.vn;Em đã xử lý:[https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/c37e5dfafff294ebecf10e9bac34856c2fe18d92]
+
+ 
+
+ ;;;",
+"[SSOR] - Lỗi bảng không scroll được - màn danh sách cảnh báo, filter theo đối tượng",SSOR-408,14576,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,17/Jan/24 6:38 PM,18/Jan/24 10:40 AM,18/Jan/24 10:40 AM,,,Lỗi: !image-2024-01-17-18-38-03-206.png!,,,3600,3600,,0%,3600,3600,,"17/Jan/24 6:38 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-38-03-206.png;https://rd.cytech.ai/secure/attachment/12654/image-2024-01-17-18-38-03-206.png","17/Jan/24 6:39 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-39-11-987.png;https://rd.cytech.ai/secure/attachment/12655/image-2024-01-17-18-39-11-987.png",,,,,,,,"0|i00hd0:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:39 PM;anh.dam@ncsgroup.vn;Em đã xử lý: [https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/c4945dd063467c44a39e2fc91332bbcfa8d44d54]
+
+Kết quả:
+
+!image-2024-01-17-18-39-11-987.png!
+
+ ;;;",
+"[SSOR] - Ghép api lấy số lượng bài viết bị lọai bỏ, màn theo dõi & giám sát",SSOR-409,14577,Bug,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,17/Jan/24 6:43 PM,18/Jan/24 10:40 AM,18/Jan/24 10:40 AM,,,"Làm giao diện như hình & call api lấy dữ liệu:
+
+!image-2024-01-17-18-42-49-587.png!",,,3600,3600,,0%,3600,3600,,"17/Jan/24 6:42 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-42-49-587.png;https://rd.cytech.ai/secure/attachment/12656/image-2024-01-17-18-42-49-587.png","17/Jan/24 6:45 PM;anh.dam@ncsgroup.vn;image-2024-01-17-18-45-47-797.png;https://rd.cytech.ai/secure/attachment/12657/image-2024-01-17-18-45-47-797.png",,,,,,,,"0|i00hd8:",[SYSTEM] Sprint - [3 - 4],,,,,"17/Jan/24 6:45 PM;anh.dam@ncsgroup.vn;Em đã xử lý:
+
+[https://rd.cytech.ai/git3/huy.nguyen/OSINT_v2/commit/eff56fb1d0c9fa01dd9a808d06f782b6877cdc66]
+
+Kết quả:  !image-2024-01-17-18-45-47-797.png!
+
+ ;;;",
+[SSOR] - Sửa api xem chi tiết bài viết,SSOR-410,14581,Task,Resolved,SSOR,OSINT,software,an.nguyen,"Truy vết đối tượng (khuôn mặt, phương tiện, biển số, đồ vật...)
+- Tạo hồ sơ.
+- Cấu hình nguồn truy vết
+- Kết nối các lõi AI, nguồn truy vết để xây dựng mối liên hệ
+- Hiển thị kết quả tìm kiếm, trình diễn dữ liệu theo map, chart...",,Medium,,an.nguyen,anh.dam@ncsgroup.vn,anh.dam@ncsgroup.vn,18/Jan/24 10:21 AM,18/Jan/24 10:43 AM,18/Jan/24 10:43 AM,,,Sửa api để truyền thêm topicID,,,3600,3600,,0%,3600,3600,,,,,,,,,,,"0|i00he4:",[SYSTEM] Sprint - [3 - 4],,,,,,

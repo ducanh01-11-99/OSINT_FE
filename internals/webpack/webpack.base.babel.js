@@ -116,9 +116,9 @@ module.exports = options => ({
       BY_PASS_LOGIN: true,
       COLLAPSE_HOVER: false,
       SIDER_MENU: true,
-      API_URL: 'http://172.168.200.202:8899',
-      LOGIN_API_URL: 'http://172.168.200.202:8899/api/v1/auth/login',
-      SOCKET_URL: 'http://172.168.200.202:8084',
+      API_URL: 'http://127.0.0.1:8891',
+      LOGIN_API_URL: 'http://127.0.0.1:8891/v2/auth/login',
+      SOCKET_URL: 'http://127.0.0.1:8891',
       RELEASE: false, // sử dụng logo và các thành phần thật
     }),
   ]),

@@ -1,3 +1,4 @@
 {
-
+  "loginFailed": "Thông tin đăng nhập hoặc mật khẩu không chính xác",
+  "loginSuccess": "Đăng nhập thành công"
 }

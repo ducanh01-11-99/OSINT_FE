@@ -5,6 +5,7 @@ import LayoutManagement from './layout/LayoutManagement/loadable';
 import Login from './containers/Login/loginLoadable';
 import Topics from './containers/Topics/loadable';
 import TopicManagement from './containers/TopicManagement/loadable';
+import CreateTopic from './containers/TopicManagement/components/CreateTopic';
 import AccountManagement from './containers/AccountManagement/loadable';
 import { CODES, PATHS } from './utils/constants';
 export default function GetRoutes() {
@@ -46,6 +47,16 @@ export default function GetRoutes() {
       exact: true,
       layout: LayoutManagement,
       component: AccountManagement,
+      breadcrumb: '',
+      code: CODES.TOPICS,
+      redirect: '',
+    },
+    {
+      name: t('common.topicManagement'),
+      path: PATHS.CREATE_TOPIC,
+      exact: true,
+      layout: LayoutManagement,
+      component: CreateTopic,
       breadcrumb: '',
       code: CODES.TOPICS,
       redirect: '',

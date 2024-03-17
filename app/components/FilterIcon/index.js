@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import filterFilledIcon from '../../images/icons/FilterFilled.svg';
 import filterOutline from '../../images/icons/FilterOutline.svg';
-
-import { CheckboxCustom, Icon } from './styles';
+import { Icon } from './styles';
+import { CheckboxCustom } from '../../shared/styles/CheckboxGroup/index';
 
 const FilterIcon = ({ list, setListSelected, isNotAllValue }) => {
   const { t } = useTranslation();

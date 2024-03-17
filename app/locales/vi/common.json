@@ -26,5 +26,14 @@
   "sideBar": {
     "topicManagement": "Quản lý chủ đề",
     "accountManagement": "Quản lý tài khoản"
+  },
+  "helmet": {
+    "topic": "Danh sách bài viết",
+    "tracking": "Theo dõi và Giám sát",
+    "tracing": "Truy vết",
+    "warning": "Cảnh báo",
+    "report": "Báo cáo",
+    "topicManagement": "Quản trị Chủ đề",
+    "accountManagement": "Quản lý tài khoản"
   }
 }

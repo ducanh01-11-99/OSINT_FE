@@ -259,10 +259,7 @@ const AccountManagement = () => {
   );
   return (
     <Container>
-      {/* <Helmet title={t('common.warning')}> */}
-      {/*  <meta name="description" content="Osint" /> */}
-      {/* </Helmet> */}
-      <Helmet title={t('common.helmet.management')}>
+      <Helmet title={t('common.helmet.accountManagement')}>
         <meta name="description" content="Osint" />
       </Helmet>
       <HeaderPart>

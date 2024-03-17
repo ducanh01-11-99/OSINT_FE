@@ -1,0 +1,105 @@
+{
+  "createTopic": "THÊM CHỦ ĐỀ",
+  "topicList": "Danh sách chủ đề",
+  "inputPlaceholder": "Tìm kiếm theo Tên chủ đề, Ngày tạo, Người tạo",
+  "table": {
+    "stt": "STT",
+    "topicName": "Tên chủ đề",
+    "topicGroup": "Nhóm chủ đề",
+    "createdDate": "Ngày tạo",
+    "createdBy": "Người tạo",
+    "status": "Trạng thái",
+    "action": "Chức năng"
+  },
+  "deleteConfirm": {
+    "description": "Bạn có chắc chắn muốn xóa chủ đề <span>{{name}}</span> không?"
+  },
+  "viewHistory": {
+    "header": "Lịch sử chỉnh sửa chủ đề",
+    "title": "Tên chủ đề"
+  },
+  "tableViewHistory": {
+    "stt": "STT",
+    "editedDate": "Ngày chỉnh sửa",
+    "editedBy": "Người chỉnh sửa",
+    "content": "Nội dung chỉnh sửa",
+    "update": "Đã chỉnh sửa"
+  },
+  "tooltip": {
+    "edit": "Chọn để chỉnh sửa chủ đề",
+    "history": "Chọn để xem lịch sử chỉnh sửa chủ đề",
+    "delete": "Chọn để xóa chủ đề"
+  },
+  "active": "Kích hoạt",
+  "deactivate": "Không kích hoạt",
+  "create": {
+    "topicName": {
+      "title": "Tên chủ đề",
+      "placeholder": "Nhập tên chủ đề",
+      "rules": {
+        "noSpecial": "Tên chủ đề không chứa ký tự đặc biệt.",
+        "required": "Không để trống tên chủ đề.",
+        "alreadyExist": "Tên chủ đề đã tồn tại."
+      }
+    },
+    "keyword": "Từ khóa",
+    "primaryKey": {
+      "title": "Từ khóa chính",
+      "placeholder": "Nhập từ khóa chính",
+      "rules": {
+        "required": "Không để trống khóa chính.",
+        "uniquePrimaryKey": "Khóa chính đã tồn tại.",
+        "noSpecialCharacter": "Khóa chính không chứa ký tự đặc biệt",
+        "differentForeignKey": "Khóa phụ đang chứa dữ liệu trùng khóa chính."
+      }
+    },
+    "foreignKey": {
+      "title": "Từ khóa phụ",
+      "placeholder": "Nhập từ khóa phụ",
+      "rules": {
+        "noSpecialCharacter": "Khóa phụ không chứa ký tự đặc biệt (trừ dấu phẩy).",
+        "differentPrimaryKey": "Khóa phụ đang chứa dữ liệu trùng khóa chính."
+      }
+    },
+    "addNewKeyword": "Thêm mới",
+    "addKeyword": "Thêm từ khóa",
+    "function": "Chức năng",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "hideOperator": "Ẩn toán tử logic",
+    "status": "Trạng thái",
+    "activate": "Kích hoạt",
+    "deactivate": "Không kích hoạt",
+    "create": "Tạo",
+    "hintText": " Lưu ý : Các <p>từ khóa phụ</p> cách nhau bởi dấu \",\": Hệ thống tìm kiếm theo điều kiện or (VD: A,B: kết quả tìm kiếm có chứa A hoặc B)",
+    "and": "and",
+    "or": "or",
+    "topicGroup": {
+      "title": "Nhóm chủ đề",
+      "placeholder": "Chọn nhóm chủ đề",
+      "rules": {
+        "required": "Bắt buộc phải chọn nhóm chủ đề."
+      }
+    },
+    "editButton": "Lưu",
+    "editConfirm": "Bạn có chắc chắn muốn lưu thay đổi về thông tin chủ đề không?",
+    "editSuccess": " Chỉnh sửa thông tin chủ đề thành công.",
+    "editFail": "Chỉnh sửa thông tin chủ đề thất bại.",
+    "createSuccess": "Thêm mới chủ đề thành công",
+    "createFail": "Thêm mới chủ đề thất bại",
+    "hintPrimaryKey": "<span>Từ khóa chính</span>: Là từ khóa bắt buộc phải xuất hiện trong nội dung bài viết của của chủ đề.",
+    "hintForeignKey": "<span>Từ khóa phụ</span>: Là từ khóa có thể xuất hiện trong nội dung bài viết của của chủ đề."
+  },
+  "deleteSuccess": "Xóa chủ đề thành công.",
+  "deleteFailed": "Xóa chủ đề thất bại.",
+  "buttonDeleteOk": "Đồng ý",
+  "buttonDeleteCancel": "Hủy",
+  "disableDeleteMessage": "Không thể xóa do chủ đề phải có một từ khóa chính",
+  "conformCancelAdd": "Bạn có chắc chắn muốn hủy thao tác thêm người dùng không?",
+  "conformCancelEdit": "Bạn có chắc chắn muốn hủy thao tác sửa người dùng không?",
+  "actionClose": "ĐÓNG",
+  "actionCancel": "HỦY",
+  "addGroup": "Bấm vào đây để thêm nhóm chủ đề"
+}

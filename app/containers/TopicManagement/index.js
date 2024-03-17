@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState, useTransition } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { format } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet/es/Helmet';
 import { useTranslation } from 'react-i18next';
+import { PlusOutlined } from '@ant-design/icons';
 import SearchIcon from '../../images/icons/search.svg';
 
 import {
@@ -15,7 +16,6 @@ import {
 import { PATHS, REDUX_KEY } from '../../utils/constants';
 import { InputCustom } from '../../shared/styles/Input';
 import { ButtonActive } from '../../shared/styles/ButtonActive';
-import { PlusOutlined } from '@ant-design/icons';
 const key = REDUX_KEY.topicManagement;
 
 const TopicManagement = () => {
@@ -61,8 +61,8 @@ const TopicManagement = () => {
 
   return (
     <TopicManagementContainer>
-      <Helmet title={t('common.helmet.management')}>
-        <meta name="description" content="Osint" />
+      <Helmet title={t('common.helmet.topicManagement')}>
+        <meta name="description" />
       </Helmet>
       <SearchArea>
         <InputSearch>

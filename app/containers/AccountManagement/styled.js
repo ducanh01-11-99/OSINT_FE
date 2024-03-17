@@ -80,3 +80,13 @@ export const TableDiv = styled.div`
   padding-left: 22px;
   height: calc(100vh - 200px);
 `;
+
+export const IconButton = styled.img`
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+`;
+
+export const Icon = styled.img`
+  margin-right: 16px;
+`;

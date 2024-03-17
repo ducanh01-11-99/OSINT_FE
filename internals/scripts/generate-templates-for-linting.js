@@ -199,7 +199,7 @@ async function restoreModifiedFile(
 
 /**
  * Test the component generator and rollback when successful
- * @param {string} name - Component name
+ * @param {string} name - components name
  * @param {string} type - Plop Action type
  * @returns {Promise<string>} - Relative path to the generated component
  */

@@ -24,11 +24,11 @@ export const INACTIVE_KEY = 1;
 
 export const LIST_STATUS = () => [
   {
-    label: t('accountManagement.status.active'),
+    label: t('common.status.active'),
     value: ACTIVE_KEY,
   },
   {
-    label: t('accountManagement.status.inActive'),
+    label: t('common.status.inActive'),
     value: INACTIVE_KEY,
   },
 ];

@@ -1,5 +1,5 @@
 /**
- * Component Generator
+ * components Generator
  */
 
 /* eslint strict: ["off"] */

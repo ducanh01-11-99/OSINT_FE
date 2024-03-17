@@ -114,21 +114,23 @@ export const DATA_MENU = [
     path: '/tracking',
     label: 'THEO DÕI VÀ GIÁM SÁT',
   },
-  {
-    key: 'tracing',
-    path: '/tracing',
-    label: 'TRUY VẾT',
-  },
+  // tạm thời chưa dùng đến
+  // {
+  //   key: 'tracing',
+  //   path: '/tracing',
+  //   label: 'TRUY VẾT',
+  // },
   {
     key: 'warning',
     path: PATHS.WARNING_CONFIG,
     label: 'CẢNH BÁO',
   },
-  {
-    key: 'report',
-    path: '/report',
-    label: 'BÁO CÁO',
-  },
+  // tạm thời chưa dùng đến
+  // {
+  //   key: 'report',
+  //   path: '/report',
+  //   label: 'BÁO CÁO',
+  // },
   {
     key: 'manage',
     path: '/manage/account',

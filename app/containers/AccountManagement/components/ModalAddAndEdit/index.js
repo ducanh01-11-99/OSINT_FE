@@ -496,7 +496,7 @@ const ModalAddAndEdit = ({ visible, data, onClose, onSubmit, reLoadData }) => {
                   setStatusSelected(e.target.value);
                 }}
               >
-                {LIST_ACTIVE.map(item => (
+                {LIST_STATUS().map(item => (
                   <RadioCustom value={item.value}>{item.label}</RadioCustom>
                 ))}
               </RadioCustom.Group>

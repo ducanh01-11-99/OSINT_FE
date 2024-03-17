@@ -17,5 +17,14 @@
   "changePassword":"Đổi mật khẩu",
   "logout": "Đăng xuất",
   "logoutConfirm": "Bạn có chắc chắn muốn đăng xuất ?",
-  "buttonCancel": "Hủy"
+  "buttonCancel": "Hủy",
+  "status": {
+    "active": "Hoạt động",
+    "inActive": "Không hoạt động"
+  },
+  "all": "Tất cả",
+  "sideBar": {
+    "topicManagement": "Quản lý chủ đề",
+    "accountManagement": "Quản lý tài khoản"
+  }
 }

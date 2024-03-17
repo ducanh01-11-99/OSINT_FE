@@ -23,16 +23,17 @@ import {
   TableContainer,
   TableDiv,
   TitleTable,
+  IconButton,
+  Icon,
 } from './styled';
-import { CardIcon } from '../Topics/components/SearchField/styled';
-import { IconButton } from '../Topics/styled';
-import SearchIcon from '../../images/icons/topic/search.svg';
-import { TableCustom } from '../../components/HighLightTable/styled';
-import FilterIcon from '../Tracking/components/TableKeyWordMap/Filter';
+import { CardIcon } from '../TopicManagement/styles';
+import SearchIcon from '../../images/icons/search.svg';
+import { TableCustom } from '../../shared/styles/TableCustom';
+import FilterIcon from '../../components/FilterIcon/index';
 
-import iconEdit from '../../images/icons/_Edit.svg';
-import iconLock from '../../images/icons/Chage pass.svg';
-import iconDelete from '../../images/icons/accountManagement/deleteIcon.svg';
+import iconEdit from '../../images/icons/iconEdit.svg';
+import iconLock from '../../images/icons/iconLock.svg';
+import iconDelete from '../../images/icons/iconDelete.svg';
 
 import * as actions from './actions';
 
@@ -48,13 +49,9 @@ import {
 import { calculateIndex } from '../../utils/commonFunction';
 import ModalAddAndEdit from './components/ModalAddAndEdit';
 import ModalWarning from './components/ModalWarning';
-import { ButtonTracingActive } from '../ArticleTracing/styled';
-import icon from '../../images/icons/iconKeyword.svg';
-import { Icon } from '../TopicManagement/styled';
-import {
-  Activate,
-  Deactivate,
-} from '../TopicManagement/components/TopicList/TopicListStyled';
+import { ButtonActive } from '../../shared/styles/ButtonActive';
+import icon from '../../images/icons/iconTable.svg';
+import { Activate, Deactivate } from '../../shared/styles/activeStatus';
 const key = REDUX_KEY.accountManagement;
 
 const AccountManagement = () => {
@@ -288,15 +285,15 @@ const AccountManagement = () => {
             />
           </InputSearch>
         </ContainerSearch>
-        <ButtonTracingActive
+        <ButtonActive
           type="primary"
           onClick={() => {
             setOpenModalAdd(true);
           }}
         >
           <PlusOutlined />
-          {t('accountManagement.button.content')}
-        </ButtonTracingActive>
+          {t('accountManagement.buttonAdd')}
+        </ButtonActive>
       </HeaderPart>
 
       <TableDiv>

@@ -4,7 +4,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { Layout } from 'antd';
 import PropTypes from 'prop-types';
 import Cookies from 'js-cookie';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 // Utis
 import _ from 'lodash';
@@ -22,7 +22,7 @@ import * as action from './actions';
 // Icons
 import avatarDefault from '../../images/icons/avatarDefault.svg';
 
-// Component
+// components
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 

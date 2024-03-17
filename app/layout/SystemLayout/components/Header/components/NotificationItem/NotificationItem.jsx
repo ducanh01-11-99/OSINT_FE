@@ -5,12 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns';
 import { Container, DateTime, Header, Icon, New, Title } from './styles';
 import { PATHS } from '../../../../../../utils/constants';
-import {
-  KEYWORD,
-  OBJECT,
-  TOPIC,
-} from '../../../../../../containers/Notification/constants';
 import warning from '../../../../../../images/icons/warning.svg';
+import { KEYWORD, TOPIC, OBJECT } from './constants';
 
 const NotificationItem = ({
   data,

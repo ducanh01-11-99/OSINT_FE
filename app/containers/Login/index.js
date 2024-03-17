@@ -22,7 +22,7 @@ const Login = () => {
       Cookies.set(COOKIES.accessToken, res.tokens.access.token);
       Cookies.set(COOKIES.refreshToken, res.tokens.refresh.token);
       toast.success(t('common.loginSuccess'));
-      navigate('/');
+      navigate('/new');
     }
   };
 

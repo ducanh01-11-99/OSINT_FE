@@ -7,9 +7,8 @@ import Cookies from 'js-cookie';
 import { useDispatch, useSelector } from 'react-redux';
 
 // Utis
-import { GetOptionList } from 'layout/dataUtils';
 import _ from 'lodash';
-import iconLogoBoCA from '../../images/logo-application.png';
+import iconLogoBoCA from '../../images/login/logo-application.png';
 import { useInjectReducer } from '../../utils/injectReducer';
 import { useInjectSaga } from '../../utils/injectSaga';
 import {
@@ -21,7 +20,6 @@ import { logOut } from '../../shared/commonFunction';
 import * as action from './actions';
 
 // Icons
-import iconMenu from '../../images/icons/iconMenu.svg';
 import avatarDefault from '../../images/icons/avatarDefault.svg';
 
 // Component
@@ -54,7 +52,8 @@ export default function SystemLayout({ children, breadcrumb, contextHolder }) {
     dispatch(action.getTopics());
   }, []);
 
-  const sideBarData = useSelector(selectTopics());
+  // const sideBarData = useSelector(selectTopics());
+  const sideBarData = [];
 
   const token = Cookies.get(COOKIES.accessToken);
 
@@ -110,8 +109,6 @@ export default function SystemLayout({ children, breadcrumb, contextHolder }) {
     navigate(`/${firstPathname}/${data}`);
   };
 
-  const optionLists = GetOptionList();
-
   // const menuPermission = GetMenuPermission();
 
   const handleClickOptionInformation = data => {
@@ -129,10 +126,8 @@ export default function SystemLayout({ children, breadcrumb, contextHolder }) {
   return (
     <Layout style={{ height: '100%', overflowY: 'hidden' }}>
       <Header
-        iconMenu={iconMenu}
         logo={iconLogoBoCA}
         userData={USER_DATA}
-        optionList={optionLists}
         onClickMenu={() => setMenuExpand(!menuExpand)}
         onClickLogo={() => navigate('/')}
         onClickOptionInformation={handleClickOptionInformation}
@@ -144,7 +139,15 @@ export default function SystemLayout({ children, breadcrumb, contextHolder }) {
           isExpand={menuExpand}
           minWidth="64px"
           maxWidth="328px"
-          dataMenu={menuData}
+          // dataMenu={menuData}
+          dataMenu={[
+            {
+              key: '0',
+              path: '',
+              label: t('topics.topics.total'),
+              keyword: [],
+            },
+          ]}
           pathname={topicId}
           onClickMenu={onSelectMenu}
         />

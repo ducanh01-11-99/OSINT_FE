@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import AuthenticationLayout from './layout/AuthenticationLayout/loadable';
+import SystemLayout from './layout/SystemLayout/loadable';
 import Login from './containers/Login/loginLoadable';
+import Topics from './containers/Topics/loadable';
 import { CODES, PATHS } from './utils/constants';
 export default function GetRoutes() {
   const { t } = useTranslation();
@@ -13,6 +15,16 @@ export default function GetRoutes() {
       component: Login,
       breadcrumb: '',
       code: CODES.LOGIN,
+      redirect: '',
+    },
+    {
+      name: t('common.topics'),
+      path: PATHS.TOPICS,
+      exact: true,
+      layout: SystemLayout,
+      component: Topics,
+      breadcrumb: '',
+      code: CODES.TOPICS,
       redirect: '',
     },
   ];

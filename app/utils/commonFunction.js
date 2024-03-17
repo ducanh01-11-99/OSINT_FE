@@ -1,7 +1,7 @@
 import { t } from 'i18next';
 import _ from 'lodash';
-import { TYPE_HIGH_LIGHT_DATA } from '../containers/Tracking/constant';
-import logo from '../images/logo-application2.svg';
+import logo from '../images/login/logo-application.png';
+import { TYPE_HIGH_LIGHT_DATA } from './constants';
 
 export const translateChanel = channelName => {
   if (channelName) {

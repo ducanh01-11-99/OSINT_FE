@@ -135,3 +135,12 @@ export const DATA_MENU = [
     label: 'QUẢN TRỊ',
   },
 ];
+
+export const TYPE_HIGH_LIGHT_DATA = {
+  ALL: 'all',
+  POSITIVE: 'positive',
+  NEGATIVE: 'negative',
+  NEUTRAL: 'neutral',
+  UNKNOWN: 'unknown',
+  NORMAL: 'normal',
+};

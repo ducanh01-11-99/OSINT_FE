@@ -32,28 +32,29 @@ import { normalTheme } from '../../../../themes/normalTheme';
 
 // Notification
 import { useInjectSaga } from '../../../../utils/injectSaga';
-import saga from '../../../../containers/Notification/saga';
-import reducer from '../../../../containers/Notification/reducer';
+// import saga from '../../../../containers/Notification/saga';
+// import reducer from '../../../../containers/Notification/reducer';
 import { useInjectReducer } from '../../../../utils/injectReducer';
-import * as actions from '../../../../containers/Notification/actions';
-import {
-  selectListNotification,
-  selectLoadingHistoriesNotification,
-} from '../../../../containers/Notification/selectors';
-import NotificationItem from './components/NotificationItem/NotificationItem';
+// import * as actions from '../../../../containers/Notification/actions';
+// import {
+//   selectListNotification,
+//   selectLoadingHistoriesNotification,
+// } from '../../../../containers/Notification/selectors';
+// import NotificationItem from './components/NotificationItem/NotificationItem';
 import { Footer, NotifiContainer } from './components/NotificationItem/styles';
-import WebSocketComponent from '../../../../components/WebSocketComponent';
+// import WebSocketComponent from '../../../../components/WebSocketComponent';
 
 // Warning
-import sagaWarning from '../../../../containers/Warning/saga';
-import reducerWarning from '../../../../containers/Warning/reducer';
-import * as actionsWarning from '../../../../containers/Warning/actions';
-import {
-  // selectCountNotify,
-  selectListNotify,
-} from '../../../../containers/Warning/selector';
+// import sagaWarning from '../../../../containers/Warning/saga';
+// import reducerWarning from '../../../../containers/Warning/reducer';
+// import * as actionsWarning from '../../../../containers/Warning/actions';
+// import {
+//   // selectCountNotify,
+//   selectListNotify,
+// } from '../../../../containers/Warning/selector';
 import { iconLogo } from '../../../../utils/commonFunction';
-import { COUNT_NOTIFY } from '../../../../containers/Warning/constant';
+import WebSocketComponent from '../../../../components/WebSocketComponent';
+// import { COUNT_NOTIFY } from '../../../../containers/Warning/constant';
 
 const Header = ({
   // eslint-disable-next-line no-unused-vars
@@ -79,23 +80,23 @@ const Header = ({
   const [openDropdown, setOpenDropdown] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const notificationList = useSelector(selectListNotification());
-  const loading = useSelector(selectLoadingHistoriesNotification());
-  const [itemsNotification, setItemsNotification] = useState([]);
+  // const notificationList = useSelector(selectListNotification());
+  // const loading = useSelector(selectLoadingHistoriesNotification());
+  // const [itemsNotification, setItemsNotification] = useState([]);
   // Notification
   const key = REDUX_KEY.notification;
-  useInjectSaga({ key, saga });
-  useInjectReducer({ key, reducer });
+  // useInjectSaga({ key, saga });
+  // useInjectReducer({ key, reducer });
 
   // Waring
-  const keyWarning = REDUX_KEY.warning;
-  useInjectSaga({ key: keyWarning, saga: sagaWarning });
-  useInjectReducer({
-    key: keyWarning,
-    reducer: reducerWarning,
-  });
-  const countNotify = localStorage.getItem(COUNT_NOTIFY);
-  const listNotify = useSelector(selectListNotify());
+  // const keyWarning = REDUX_KEY.warning;
+  // useInjectSaga({ key: keyWarning, saga: sagaWarning });
+  // useInjectReducer({
+  //   key: keyWarning,
+  //   reducer: reducerWarning,
+  // });
+  const countNotify = localStorage.getItem('COUNT_NOTIFY');
+  // const listNotify = useSelector(selectListNotify());
   const filterRef = useRef({
     page: 0,
     size: 5,
@@ -108,13 +109,15 @@ const Header = ({
     navigate(data ? `${data}` : DATA_MENU[0].path);
   };
   const loadDataNotification = () => {
-    if (!notificationList.list.length) {
-      dispatch(actions.getNotification(filterRef.current));
-    }
+    // todo
+    // if (!notificationList.list.length) {
+    //   dispatch(actions.getNotification(filterRef.current));
+    // }
   };
   const resetNews = () => {
-    dispatch(actionsWarning.resetNews());
-    localStorage.setItem(COUNT_NOTIFY, 0);
+    // todo
+    // dispatch(actionsWarning.resetNews());
+    // localStorage.setItem(COUNT_NOTIFY, 0);
   };
   const onClickNotification = () => {
     if (!openDropdown) {
@@ -130,32 +133,33 @@ const Header = ({
     setOpenDropdown(false);
   };
   const dropdownRender = dropdown => (
-    <Spin spinning={loading} tip="Loading">
+    // <Spin spinning={loading} tip="Loading">
+    <Spin spinning={false} tip="Loading">
       <NotifiContainer>
         {dropdown}
         <Footer onClick={onClickViewAll}>{t('common.viewAll')}</Footer>
       </NotifiContainer>
     </Spin>
   );
-  useEffect(() => {
-    const formatList = notificationList.list.map(item => {
-      const isNew = listNotify.find(ele => ele.id === item.id);
-      return {
-        key: item.id,
-        label: (
-          <NotificationItem
-            closeDropdown={() => setOpenDropdown(false)}
-            data={item}
-            isNew={isNew}
-          />
-        ),
-      };
-    });
-    setItemsNotification(formatList);
-  }, [notificationList, listNotify]);
-  useEffect(() => {
-    setPathnameCustom(pathname);
-  }, [pathname]);
+  // useEffect(() => {
+  //   const formatList = notificationList.list.map(item => {
+  //     const isNew = listNotify.find(ele => ele.id === item.id);
+  //     return {
+  //       key: item.id,
+  //       label: (
+  //         <NotificationItem
+  //           closeDropdown={() => setOpenDropdown(false)}
+  //           data={item}
+  //           isNew={isNew}
+  //         />
+  //       ),
+  //     };
+  //   });
+  //   setItemsNotification(formatList);
+  // }, [notificationList, listNotify]);
+  // useEffect(() => {
+  //   setPathnameCustom(pathname);
+  // }, [pathname]);
 
   return (
     <HeaderEtn>
@@ -189,24 +193,34 @@ const Header = ({
         <RightHeader>
           {/* <ThemeProvider /> */}
           {/* <LanguageProvider /> */}
-          <Dropdown
-            menu={{ items: itemsNotification }}
-            // open={openDropdown}
-            overlayClassName="notify-dropdown"
-            dropdownRender={dropdownRender}
-            trigger={['click']}
-          >
-            <Badge count={countNotify}>
-              <BellOutlined
-                style={{
-                  fontSize: '24px',
-                  color: normalTheme.colors.neu5,
-                  cursor: 'pointer',
-                }}
-                onClick={onClickNotification}
-              />
-            </Badge>
-          </Dropdown>
+          <Badge count={countNotify}>
+            <BellOutlined
+              style={{
+                fontSize: '24px',
+                color: normalTheme.colors.neu5,
+                cursor: 'pointer',
+              }}
+              onClick={onClickNotification}
+            />
+          </Badge>
+          {/* <Dropdown */}
+          {/*   menu={{ items: itemsNotification }} */}
+          {/*   // open={openDropdown} */}
+          {/*   overlayClassName="notify-dropdown" */}
+          {/*   dropdownRender={dropdownRender} */}
+          {/*   trigger={['click']} */}
+          {/* > */}
+          {/*   <Badge count={countNotify}> */}
+          {/*     <BellOutlined */}
+          {/*       style={{ */}
+          {/*         fontSize: '24px', */}
+          {/*         color: normalTheme.colors.neu5, */}
+          {/*         cursor: 'pointer', */}
+          {/*       }} */}
+          {/*       onClick={onClickNotification} */}
+          {/*     /> */}
+          {/*   </Badge> */}
+          {/* </Dropdown> */}
           <PopoverCustom
             placement="bottom"
             content={InfoCardUser}

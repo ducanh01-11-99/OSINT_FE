@@ -4,10 +4,7 @@ import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Header from '../SystemLayout/components/Header';
-import iconMenu from '../../images/icons/iconMenu.svg';
-import logoMini from '../../images/logoNCA-mini.svg';
-// import iconLogoBoCA from '../../images/logo-application.png';
-// import { iconLogo } from '../../utils/commonFunction';
+import logoMini from '../../images/icons/logoNCA-mini.svg';
 import {
   ACCOUNT_SETTING_OPTION_ID,
   LOGOUT_OPTION_ID,
@@ -15,7 +12,6 @@ import {
 import { logOut } from '../../shared/commonFunction';
 import avatarDefault from '../../images/icons/avatarDefault.svg';
 import { COOKIES } from '../../utils/constants';
-import { GetOptionList } from '../dataUtils';
 import { ContentStyled, EmptySider } from '../SystemLayout/styles';
 const EmptyLayout = ({ children, breadcrumb }) => {
   const navigate = useNavigate();
@@ -35,14 +31,11 @@ const EmptyLayout = ({ children, breadcrumb }) => {
     name: Cookies.get(COOKIES.username),
     email: Cookies.get(COOKIES.email),
   };
-  const optionLists = GetOptionList();
   return (
     <Layout style={{ height: '100%', overflowY: 'hidden' }}>
       <Header
-        iconMenu={iconMenu}
         logo={logoMini}
         userData={USER_DATA}
-        optionList={optionLists}
         onClickLogo={() => navigate('/')}
         onClickOptionInformation={handleClickOptionInformation}
         breadcrumb={breadcrumb}

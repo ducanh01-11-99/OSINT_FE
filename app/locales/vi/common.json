@@ -1,4 +1,21 @@
 {
   "loginFailed": "Thông tin đăng nhập hoặc mật khẩu không chính xác",
-  "loginSuccess": "Đăng nhập thành công"
+  "loginSuccess": "Đăng nhập thành công",
+  "menuTab": {
+    "login": "Đăng nhập",
+    "topic": "Danh sách bài viết"
+  },
+  "time": {
+    "today": "Hôm nay",
+    "oneWeekAgo": "Một tuần trước",
+    "oneMonthAgo": "Một tháng trước",
+    "threeMonthAgo": "Ba tháng trước",
+    "sixMonthAgo": "Sáu tháng trước",
+    "oneYearAgo": "Một năm trước",
+    "columnTime": "Thời gian"
+  },
+  "changePassword":"Đổi mật khẩu",
+  "logout": "Đăng xuất",
+  "logoutConfirm": "Bạn có chắc chắn muốn đăng xuất ?",
+  "buttonCancel": "Hủy"
 }
